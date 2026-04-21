@@ -1,143 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CitrusBurn - Support Healthy Weight Management</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#fffaf5;color:#1a1a1a;line-height:1.6}
-.container{max-width:680px;margin:0 auto;padding:0 20px}
-.hero{background:linear-gradient(135deg,#ff8c00,#e8620a);color:#fff;padding:60px 20px 50px;text-align:center}
-.hero h1{font-size:2.2rem;font-weight:700;margin-bottom:12px;letter-spacing:-0.5px}
-.hero .subtitle{font-size:1.15rem;opacity:0.92;max-width:500px;margin:0 auto 28px}
-.hero .cta-button{display:inline-block;background:#fff;color:#e8620a;font-weight:700;font-size:1.1rem;padding:16px 40px;border-radius:6px;text-decoration:none;transition:transform 0.15s ease,box-shadow 0.15s ease}
-.hero .cta-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.15)}
-.headline-bar{background:#1a1a1a;color:#fff;text-align:center;padding:14px 20px;font-size:0.95rem;font-weight:600;letter-spacing:0.3px}
-.section{padding:48px 20px}
-.section-alt{background:#f9f3ed}
-h2{font-size:1.6rem;font-weight:700;margin-bottom:20px;text-align:center}
-p{margin-bottom:16px;font-size:1.02rem;color:#333}
-.benefits{list-style:none;padding:0;max-width:480px;margin:0 auto}
-.benefits li{padding:12px 0 12px 36px;position:relative;font-size:1.02rem;border-bottom:1px solid #eee}
-.benefits li:last-child{border-bottom:none}
-.benefits li::before{content:"\2713";position:absolute;left:0;color:#e8620a;font-weight:700;font-size:1.2rem}
-.problem-box{background:#fff;border:2px solid #e8620a;border-radius:6px;padding:28px 24px;margin:24px 0}
-.problem-box h3{color:#e8620a;font-size:1.15rem;margin-bottom:10px}
-.ingredients{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px}
-.ingredient{background:#fff;padding:20px;border-radius:6px;border:1px solid #e8d5c0;text-align:center}
-.ingredient h4{color:#e8620a;font-size:1rem;margin-bottom:6px}
-.ingredient p{font-size:0.9rem;color:#555;margin-bottom:0}
-.testimonial{background:#fff;padding:24px;border-radius:6px;border-left:4px solid #e8620a;margin:20px 0}
-.testimonial p{font-style:italic;margin-bottom:8px}
-.testimonial .name{font-weight:600;font-size:0.9rem;color:#666;font-style:normal}
-.guarantee{text-align:center;padding:32px 20px;background:#fffaf5;border:2px dashed #e8620a;border-radius:8px;margin:32px auto;max-width:500px}
-.guarantee h3{color:#e8620a;margin-bottom:8px;font-size:1.2rem}
-.final-cta{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#ff8c00,#e8620a);color:#fff}
-.final-cta h2{color:#fff;margin-bottom:8px}
-.final-cta p{color:rgba(255,255,255,0.9);margin-bottom:28px}
-.final-cta .cta-button{display:inline-block;background:#fff;color:#e8620a;font-weight:700;font-size:1.15rem;padding:18px 48px;border-radius:6px;text-decoration:none;transition:transform 0.15s ease,box-shadow 0.15s ease}
-.final-cta .cta-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.15)}
-.disclaimer{text-align:center;padding:30px 20px;font-size:0.8rem;color:#888;border-top:1px solid #eee}
-.disclaimer a{color:#888}
-.stars{color:#ff8c00;font-size:1.2rem;margin-bottom:8px;letter-spacing:2px}
-@media(max-width:480px){.hero h1{font-size:1.7rem}.container{padding:0 16px}.ingredients{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CitrusBurn - Natural Metabolism Support</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --accent-color: #ea580c;
+            --accent-hover: #c2410c;
+            --bg-secondary: #f9fafb;
+            --max-width: 700px;
+            --font-size-base: 18px;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: var(--font-size-base);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subheadline {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+        }
+
+        h2 {
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 1.25rem;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 14px rgba(234, 88, 12, 0.25);
+            margin-bottom: 1.5rem;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section { padding: 1rem 0 2rem; }
+        
+        .section-box {
+            background-color: var(--bg-secondary);
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0 2.5rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Feature Cards */
+        .features-list { list-style: none; margin-bottom: 2rem; }
+        
+        .feature-item {
+            background: #ffffff;
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 500;
+            font-size: 1.05rem;
+            line-height: 1.4;
+        }
+
+        .check { color: #16a34a; font-size: 1.3rem; flex-shrink: 0; }
+
+        /* Trust Grid */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .trust-item {
+            background: #ffffff;
+            padding: 1.25rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .trust-icon { font-size: 1.4rem; }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 1rem;
+            padding: 0 0.5rem;
+            line-height: 1.4;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mobile Tweaks */
+        @media (max-width: 480px) {
+            .container { padding: 1.5rem 1.2rem; }
+            .section-box { padding: 1.5rem 1rem; }
+            .trust-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-<div class="hero">
-<div class="container">
-<h1>The Citrus Secret to Supporting Healthy Weight Loss</h1>
-<p class="subtitle">A natural tropical nutrient that helps your body burn fat more efficiently — backed by real science.</p>
-<a href="https://de2d6am6nphb8v57sgxqwzwe-n.hop.clickbank.net" class="cta-button">Watch the Video Presentation →</a>
-</div>
-</div>
-<div class="hero-image">
-<img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=800&q=80" alt="Fresh orange fruits rich in vitamin C" style="width:100%;max-width:680px;height:auto;object-fit:cover;border-radius:8px" loading="lazy">
-</div>
-<div class="headline-bar">
-⚡ Featured in health publications worldwide — Over 150,000 customers trust CitrusBurn
-</div>
-<div class="section">
-<div class="container">
-<h2>Why Traditional Diets Keep Failing You</h2>
-<div class="problem-box">
-<h3>New Research Reveals the Missing Link</h3>
-<p>Scientists at a leading research university discovered that people with low levels of <strong>AMPK</strong> (a key metabolic enzyme) struggle to lose weight — regardless of diet or exercise.</p>
-<p>This enzyme is activated by a rare tropical nutrient found in select citrus varieties — one that most people's diets are completely missing.</p>
-</div>
-</div>
-</div>
-<div class="section section-alt">
-<div class="container">
-<h2>How CitrusBurn Works</h2>
-<ul class="benefits">
-<li>Activates AMPK to support your body's natural fat-burning process</li>
-<li>Helps maintain healthy metabolism throughout the day</li>
-<li>Supports steady, sustainable energy levels without crashes</li>
-<li>Made with all-natural, carefully sourced citrus extracts</li>
-<li>No harsh stimulants, no dangerous chemicals</li>
-<li>Easy-to-take formula you use alongside your normal routine</li>
-</ul>
-</div>
-</div>
-<div class="section">
-<div class="container">
-<h2>Key Natural Ingredients</h2>
-<div class="ingredients">
-<div class="ingredient">
-<h4>Citrus Bergamot</h4>
-<p>Rare Calabrian citrus rich in flavonoids that support metabolic health.</p>
-</div>
-<div class="ingredient">
-<h4>Green Tea Extract</h4>
-<p>Antioxidant-rich support for healthy energy and metabolism.</p>
-</div>
-<div class="ingredient">
-<h4>Sida Cordifolia</h4>
-<p>Traditional herb used for centuries to support weight management.</p>
-</div>
-<div class="ingredient">
-<h4>Ginger Root</h4>
-<p>Supports healthy digestion and nutrient absorption.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="section section-alt">
-<div class="container">
-<h2>What Customers Are Saying</h2>
-<div class="testimonial">
-<div class="stars">★★★★★</div>
-<p>"I tried everything for years. Within weeks of using CitrusBurn, I noticed my energy levels improving and my clothes fitting differently. This is the real deal."</p>
-<span class="name">— Sarah M., Texas</span>
-</div>
-<div class="testimonial">
-<div class="stars">★★★★★</div>
-<p>"Finally something that works WITH my body instead of against it. I feel like myself again."</p>
-<span class="name">— David K., Florida</span>
-</div>
-</div>
-</div>
-<div class="section">
-<div class="container">
-<div class="guarantee">
-<h3>100% Money-Back Guarantee</h3>
-<p>Try CitrusBurn risk-free. If you're not satisfied with your results, get a full refund. No questions asked.</p>
-</div>
-</div>
-</div>
-<div class="final-cta">
-<div class="container">
-<h2>Ready to Support Your Body's Natural Ability to Burn Fat?</h2>
-<p>Discover the science-backed citrus nutrient that's helping thousands of people.</p>
-<a href="https://de2d6am6nphb8v57sgxqwzwe-n.hop.clickbank.net" class="cta-button">Get Access Now →</a>
-</div>
-</div>
-<div class="disclaimer">
-<p>This is an independent review site. We may receive compensation when you purchase through links on this page.<br>
-Statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease.<br>
-Individual results may vary.</p>
-</div>
+    <div class="container">
+        <main>
+            <!-- Hero Section -->
+            <section class="section">
+                <h1>Why Belly Fat Gets Harder After 35 (And What People Are Trying in 2026)</h1>
+                <p class="subheadline">A trending daily formula is getting attention from adults frustrated with slow metabolism and stubborn weight gain.</p>
+                
+                <a href="https://de2d6am6nphb8v57sgxqwzwe-n.hop.clickbank.net" class="cta-button">See Official CitrusBurn Offer</a>
+            </section>
+
+            <!-- Value Section -->
+            <section class="section-box">
+                <h2>Why People Are Looking at This</h2>
+                <div class="features-list">
+                    <div class="feature-item"><span class="check">&#9989;</span> Supports healthy metabolism</div>
+                    <div class="feature-item"><span class="check">&#9989;</span> Helps reduce cravings naturally</div>
+                    <div class="feature-item"><span class="check">&#9989;</span> Easy daily routine with no complicated steps</div>
+                </div>
+                
+                <a href="https://de2d6am6nphb8v57sgxqwzwe-n.hop.clickbank.net" class="cta-button">Check Availability & Pricing</a>
+            </section>
+
+            <!-- Trust Section -->
+            <section class="section">
+                <div class="trust-grid">
+                    <div class="trust-item"><span class="trust-icon">&#128274;</span>Secure Checkout</div>
+                    <div class="trust-item"><span class="trust-icon">&#128666;</span>Fast Shipping</div>
+                    <div class="trust-item"><span class="trust-icon">&#9733;</span>Satisfaction Guarantee</div>
+                    <div class="trust-item"><span class="trust-icon">&#9989;</span>Official Website Offer</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Disclaimer Footer -->
+        <footer class="footer">
+            <p class="disclaimer">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+            <p class="disclaimer">This page may contain affiliate links. We may earn a commission if you purchase through links on this page.</p>
+        </footer>
+    </div>
 </body>
 </html>
