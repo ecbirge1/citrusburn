@@ -1,0 +1,60 @@
+name: Kalshi Weather Paper Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    paths:
+      - "automation/kalshi-weather/weather_paper_scanner.py"
+      - ".github/workflows/kalshi-weather-paper.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kalshi-weather-paper
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan every open daily-high location
+        run: python3 automation/kalshi-weather/weather_paper_scanner.py
+
+      - name: Commit audit results
+        if: always()
+        run: |
+          git config user.name "weather-paper-bot"
+          git config user.email "weather-paper-bot@users.noreply.github.com"
+          git add automation/kalshi-weather/data/latest.json automation/kalshi-weather/data/signals.jsonl 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Kalshi weather paper scan"
+            git push
+          fi
+
+      - name: Summarize coverage
+        if: always()
+        run: |
+          echo "## Kalshi Weather Paper Scan" >> "$GITHUB_STEP_SUMMARY"
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          p=Path("automation/kalshi-weather/data/latest.json")
+          if not p.exists():
+              print("- No report produced")
+          else:
+              d=json.loads(p.read_text())
+              x=d.get("discovery",{})
+              print(f"- Complete pagination: {x.get('pagination_complete')}")
+              print(f"- Locations: {x.get('locations_count', 0)}")
+              print(f"- Events: {x.get('events', 0)}")
+              print(f"- Open brackets: {x.get('open_temperature_markets', 0)}")
+              print(f"- Signals: {len(d.get('qualifying_signals', []))}")
+              print(f"- Coverage failures: {len(d.get('coverage_failures', []))}")
+              if d.get("fatal_error"): print(f"- Fatal error: {d['fatal_error']}")
+          PY
