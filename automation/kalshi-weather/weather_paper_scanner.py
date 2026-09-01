@@ -69,10 +69,10 @@ def discover():
     # thousands of unrelated open markets and automatically catches new cities
     # and renamed daily-high series.
     catalog = get("/series?" + urllib.parse.urlencode({
-        "category": "Weather",
+        "category": "Climate and Weather",
         "include_product_metadata": "true",
     }))
-    weather_series = catalog.get("series", [])
+    weather_series = catalog.get("series") or []
     selected = {s["ticker"]: s for s in weather_series if s.get("ticker") and is_daily_high_series(s)}
     if not selected:
         raise RuntimeError("Weather series catalog returned no daily-high series")
