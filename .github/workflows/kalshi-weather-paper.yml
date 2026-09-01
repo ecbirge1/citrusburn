@@ -31,7 +31,10 @@ jobs:
         run: |
           git config user.name "weather-paper-bot"
           git config user.email "weather-paper-bot@users.noreply.github.com"
-          git add automation/kalshi-weather/data/latest.json automation/kalshi-weather/data/signals.jsonl 2>/dev/null || true
+          git add automation/kalshi-weather/data/latest.json
+          if [ -f automation/kalshi-weather/data/signals.jsonl ]; then
+            git add automation/kalshi-weather/data/signals.jsonl
+          fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Kalshi weather paper scan"
             git push
