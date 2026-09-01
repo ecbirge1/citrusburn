@@ -95,7 +95,11 @@ def discover():
             payload = get("/markets?" + urllib.parse.urlencode(params))
             pages += 1
             count += 1
-            markets.extend(m for m in payload.get("markets", []) if is_daily_high(m))
+            markets.extend(
+                {**m, "series_ticker": m.get("series_ticker") or ticker}
+                for m in payload.get("markets", [])
+                if is_daily_high({**m, "series_ticker": m.get("series_ticker") or ticker})
+            )
             next_cursor = payload.get("cursor") or ""
             if not next_cursor:
                 break
