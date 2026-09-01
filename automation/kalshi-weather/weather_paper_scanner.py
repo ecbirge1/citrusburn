@@ -54,20 +54,62 @@ def is_daily_high(m):
     )
 
 
+def is_daily_high_series(meta):
+    """Identify the recurring daily-high product from live series metadata, not a city allowlist."""
+    ticker = str(meta.get("ticker") or "").upper()
+    title = str(meta.get("title") or "").lower()
+    frequency = str(meta.get("frequency") or "").lower()
+    high_words = ("highest temperature", "high temperature", "daily high", "temperature high")
+    not_hourly = "hour" not in frequency and "hourly" not in title
+    return not_hourly and (any(word in title for word in high_words) or ticker.startswith(("KXHIGH", "KXHIGHT")))
+
+
 def discover():
-    markets, cursor, pages = [], "", 0
-    while True:
-        params = {"status": "open", "limit": 1000, "mve_filter": "exclude"}
-        if cursor:
-            params["cursor"] = cursor
-        payload = get("/markets?" + urllib.parse.urlencode(params))
-        pages += 1
-        markets.extend(m for m in payload.get("markets", []) if is_daily_high(m))
-        cursor = payload.get("cursor") or ""
-        if not cursor:
-            return markets, pages
-        if pages > 100:
-            raise RuntimeError("Pagination safety limit exceeded")
+    # Enumerate the current Weather catalog first.  This avoids walking tens of
+    # thousands of unrelated open markets and automatically catches new cities
+    # and renamed daily-high series.
+    catalog = get("/series?" + urllib.parse.urlencode({
+        "category": "Weather",
+        "include_product_metadata": "true",
+    }))
+    weather_series = catalog.get("series", [])
+    selected = {s["ticker"]: s for s in weather_series if s.get("ticker") and is_daily_high_series(s)}
+    if not selected:
+        raise RuntimeError("Weather series catalog returned no daily-high series")
+
+    markets, pages = [], 0
+    series_pages = {}
+    for ticker in sorted(selected):
+        cursor = ""
+        seen_cursors = set()
+        count = 0
+        while True:
+            params = {
+                "series_ticker": ticker,
+                "status": "open",
+                "limit": 1000,
+                "mve_filter": "exclude",
+            }
+            if cursor:
+                params["cursor"] = cursor
+            payload = get("/markets?" + urllib.parse.urlencode(params))
+            pages += 1
+            count += 1
+            markets.extend(m for m in payload.get("markets", []) if is_daily_high(m))
+            next_cursor = payload.get("cursor") or ""
+            if not next_cursor:
+                break
+            if next_cursor == cursor or next_cursor in seen_cursors:
+                raise RuntimeError(f"Repeated pagination cursor for {ticker}")
+            seen_cursors.add(next_cursor)
+            cursor = next_cursor
+            if count > 100:
+                raise RuntimeError(f"Pagination safety limit exceeded for {ticker}")
+        series_pages[ticker] = count
+
+    active = {m.get("series_ticker") for m in markets}
+    active_meta = {ticker: selected[ticker] for ticker in active if ticker in selected}
+    return markets, pages, active_meta, len(weather_series), len(selected), series_pages
 
 
 def number(value):
@@ -138,12 +180,11 @@ def location(meta, fallback):
 
 def scan():
     started = now()
-    markets, pages = discover()
+    markets, pages, series, weather_series_count, daily_high_series_count, series_pages = discover()
     groups = {}
     for m in markets:
         groups.setdefault(m.get("event_ticker") or m["ticker"], []).append(m)
 
-    series = {t: series_meta(t) for t in sorted({m.get("series_ticker") for m in markets if m.get("series_ticker")})}
     events, signals, failures = [], [], []
 
     for event_ticker, members in sorted(groups.items()):
@@ -220,6 +261,9 @@ def scan():
         "discovery": {
             "pagination_complete": True,
             "market_pages": pages,
+            "weather_series_in_catalog": weather_series_count,
+            "daily_high_series_discovered": daily_high_series_count,
+            "series_pages": series_pages,
             "open_temperature_markets": len(markets),
             "events": len(events),
             "locations_count": len(locations),
