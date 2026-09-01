@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Paper-only all-location Kalshi daily-high scanner. No auth or order code."""
+"""Paper-only all-location Kalshi daily-high scanner. No auth or order code.\nPublic runner; contains no credentials."""
 from __future__ import annotations
 
 import json
