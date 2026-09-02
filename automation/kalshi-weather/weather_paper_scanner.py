@@ -319,18 +319,26 @@ def nws_remaining_max(state, close_time):
     hourly_url = ((point.get("properties") or {}).get("forecastHourly"))
     if not hourly_url:
         return None
-    forecast = external_json(hourly_url)
+    source = "nws_hourly"
+    try:
+        forecast = external_json(hourly_url)
+    except Exception:
+        # Individual NWS hourly grid endpoints occasionally return persistent
+        # 500s while the official standard-period endpoint remains healthy.
+        forecast = external_json(hourly_url.removesuffix("/hourly"))
+        source = "nws_standard_period_fallback"
     values = []
     current = datetime.now(timezone.utc)
     for period in ((forecast.get("properties") or {}).get("periods") or []):
         when = parse_time(period.get("startTime"))
+        end = parse_time(period.get("endTime")) or when
         value = number(period.get("temperature"))
         unit = str(period.get("temperatureUnit") or "F").upper()
-        if when and value is not None and current <= when <= close_time:
+        if when and end and value is not None and when <= close_time and end >= current:
             if unit == "C":
                 value = value * 9 / 5 + 32
             values.append(value)
-    return max(values) if values else None
+    return (max(values), source) if values else (None, source)
 
 
 def discrete_temperature_distribution(mean_f, sigma_f, observed_high_f):
@@ -365,7 +373,7 @@ def bracket_probability(market, distribution):
 
 def observation_signal(event_ticker, members, place, station, state, close_time, existing_keys):
     hours_to_close = (close_time - datetime.now(timezone.utc)).total_seconds() / 3600
-    forecast_max = nws_remaining_max(state, close_time)
+    forecast_max, forecast_source = nws_remaining_max(state, close_time)
     if forecast_max is None:
         return [], {"status": "weather_forecast_unavailable", "hours_to_close": round(hours_to_close, 2)}
     mean = max(state["observed_high_f"], forecast_max)
@@ -415,6 +423,7 @@ def observation_signal(event_ticker, members, place, station, state, close_time,
                 "observed_high_f": state["observed_high_f"],
                 "six_hour_max_f": state.get("six_hour_max_f"),
                 "remaining_nws_max_f": round(forecast_max, 2),
+                "remaining_nws_source": forecast_source,
                 "hours_to_close": round(hours_to_close, 2),
                 "gross_cost": round(cost, 4),
                 "estimated_fees": round(fees, 4),
@@ -435,6 +444,7 @@ def observation_signal(event_ticker, members, place, station, state, close_time,
         "model_mean_f": round(mean, 2),
         "model_sigma_f": sigma,
         "remaining_nws_max_f": round(forecast_max, 2),
+        "remaining_nws_source": forecast_source,
         **state,
     }
     return candidates, snapshot
