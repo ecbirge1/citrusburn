@@ -33,9 +33,11 @@ jobs:
           git config user.name "weather-paper-bot"
           git config user.email "weather-paper-bot@users.noreply.github.com"
           git add automation/kalshi-weather/data/latest.json
-          if [ -f automation/kalshi-weather/data/signals.jsonl ]; then
-            git add automation/kalshi-weather/data/signals.jsonl
-          fi
+          for f in signals.jsonl observation_snapshots.jsonl reconciliations.jsonl; do
+            if [ -f "automation/kalshi-weather/data/$f" ]; then
+              git add "automation/kalshi-weather/data/$f"
+            fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m "Update Kalshi weather paper scan"
             git push
@@ -59,6 +61,13 @@ jobs:
               print(f"- Events: {x.get('events', 0)}")
               print(f"- Open brackets: {x.get('open_temperature_markets', 0)}")
               print(f"- Signals: {len(d.get('qualifying_signals', []))}")
+              o=d.get("observation_edge",{})
+              print(f"- Observation events evaluated: {o.get('events_evaluated', 0)}")
+              print(f"- Observation data failures: {len(o.get('data_failures', []))}")
+              t=d.get("paper_tracking",{})
+              print(f"- Cumulative paper signals: {t.get('cumulative_signals', 0)}")
+              print(f"- Cumulative settled: {t.get('cumulative_settled', 0)}")
+              print(f"- Cumulative paper P&L: ${t.get('cumulative_paper_pnl', 0):.4f}")
               print(f"- Coverage failures: {len(d.get('coverage_failures', []))}")
               if d.get("fatal_error"): print(f"- Fatal error: {d['fatal_error']}")
           PY
