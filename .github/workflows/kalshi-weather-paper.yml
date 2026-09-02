@@ -8,6 +8,7 @@ on:
     paths:
       - "automation/kalshi-weather/weather_paper_scanner.py"
       - ".github/workflows/kalshi-weather-paper.yml"
+      - "automation/kalshi-weather/heartbeat.txt"
 
 permissions:
   contents: write
