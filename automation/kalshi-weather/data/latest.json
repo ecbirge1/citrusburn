@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-02T12:01:26.273891+00:00",
-  "completed_at": "2026-09-02T12:01:38.564494+00:00",
+  "scanned_at": "2026-09-02T12:03:11.145195+00:00",
+  "completed_at": "2026-09-02T12:03:22.977948+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -71,30 +71,30 @@
     "events": 24,
     "locations_count": 24,
     "locations": [
-      "Atlanta Max Temperature",
+      "Atlanta",
       "Austin",
-      "Boston Maximum Daily Temperature",
+      "Boston",
       "Chicago",
-      "Daily High Temperature Houston",
-      "Dallas Maximum Temperature",
+      "Dallas",
       "Denver",
-      "HIGHEST Temperature SATX",
-      "High Temperature San Diego",
-      "Las Vegas Max Daily Temperature",
+      "Houston",
+      "Las Vegas",
       "Los Angeles",
+      "Louisville",
       "Miami",
-      "Minneapolis Daily High Temperature",
-      "NYC",
-      "New Orleans Max temp Daily",
-      "Newark, NJ (EWR) Daily Max Temp",
-      "Oklahoma City Maximum High Temperature",
+      "Minneapolis",
+      "New Orleans",
+      "New York City",
+      "Newark",
+      "Oklahoma City",
       "Philadelphia",
-      "Phoenix High Temperature Daily",
-      "San Antonio Daily Maximum Temperature",
-      "San Francisco High Temperature Daily",
-      "Seattle Maximum Temperature Daily",
-      "Trenton, NJ Daily Max Temp",
-      "Washington DC Daily Max Temp"
+      "Phoenix",
+      "San Antonio",
+      "San Diego",
+      "San Francisco",
+      "Seattle",
+      "Trenton",
+      "Washington DC"
     ]
   },
   "methodology": {
@@ -131,8 +131,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -152,8 +152,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -194,8 +194,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -215,8 +215,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -224,7 +224,7 @@
       }
     },
     {
-      "location": "NYC",
+      "location": "New York City",
       "series_ticker": "KXHIGHNY",
       "event_ticker": "KXHIGHNY-26SEP02",
       "settlement_station": "KNYC",
@@ -257,8 +257,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -266,7 +266,7 @@
       }
     },
     {
-      "location": "Atlanta Max Temperature",
+      "location": "Atlanta",
       "series_ticker": "KXHIGHTATL",
       "event_ticker": "KXHIGHTATL-26SEP02",
       "settlement_station": "KATL",
@@ -287,7 +287,7 @@
       }
     },
     {
-      "location": "Boston Maximum Daily Temperature",
+      "location": "Boston",
       "series_ticker": "KXHIGHTBOS",
       "event_ticker": "KXHIGHTBOS-26SEP02",
       "settlement_station": "KBOS",
@@ -308,7 +308,7 @@
       }
     },
     {
-      "location": "Dallas Maximum Temperature",
+      "location": "Dallas",
       "series_ticker": "KXHIGHTDAL",
       "event_ticker": "KXHIGHTDAL-26SEP02",
       "settlement_station": "KDFW",
@@ -320,8 +320,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.02,
+      "optimistic_net_after_fees_buffer": -0.0704,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -329,7 +329,7 @@
       }
     },
     {
-      "location": "Washington DC Daily Max Temp",
+      "location": "Washington DC",
       "series_ticker": "KXHIGHTDC",
       "event_ticker": "KXHIGHTDC-26SEP02",
       "settlement_station": "KDCA",
@@ -341,8 +341,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.0,
-      "optimistic_net_after_fees_buffer": -0.05,
+      "top_basket_cost": 0.97,
+      "optimistic_net_after_fees_buffer": -0.0194,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -350,7 +350,7 @@
       }
     },
     {
-      "location": "Newark, NJ (EWR) Daily Max Temp",
+      "location": "Newark",
       "series_ticker": "KXHIGHTEWR",
       "event_ticker": "KXHIGHTEWR-26SEP02",
       "settlement_station": "KEWR",
@@ -371,7 +371,7 @@
       }
     },
     {
-      "location": "Daily High Temperature Houston",
+      "location": "Houston",
       "series_ticker": "KXHIGHTHOU",
       "event_ticker": "KXHIGHTHOU-26SEP02",
       "settlement_station": "KHOU",
@@ -392,7 +392,7 @@
       }
     },
     {
-      "location": "Las Vegas Max Daily Temperature",
+      "location": "Las Vegas",
       "series_ticker": "KXHIGHTLV",
       "event_ticker": "KXHIGHTLV-26SEP02",
       "settlement_station": "KLAS",
@@ -413,7 +413,7 @@
       }
     },
     {
-      "location": "Minneapolis Daily High Temperature",
+      "location": "Minneapolis",
       "series_ticker": "KXHIGHTMIN",
       "event_ticker": "KXHIGHTMIN-26SEP02",
       "settlement_station": "KMSP",
@@ -434,31 +434,10 @@
       }
     },
     {
-      "location": "New Orleans Max temp Daily",
+      "location": "New Orleans",
       "series_ticker": "KXHIGHTNOLA",
       "event_ticker": "KXHIGHTNOLA-26SEP02",
       "settlement_station": "KMSY",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Oklahoma City Maximum High Temperature",
-      "series_ticker": "KXHIGHTOKC",
-      "event_ticker": "KXHIGHTOKC-26SEP02",
-      "settlement_station": "KOKC",
       "bracket_count": 6,
       "settlement_sources": [
         {
@@ -476,7 +455,28 @@
       }
     },
     {
-      "location": "Phoenix High Temperature Daily",
+      "location": "Oklahoma City",
+      "series_ticker": "KXHIGHTOKC",
+      "event_ticker": "KXHIGHTOKC-26SEP02",
+      "settlement_station": "KOKC",
+      "bracket_count": 6,
+      "settlement_sources": [
+        {
+          "name": "The Weather Company",
+          "url": "https://weather.com/kalshi"
+        }
+      ],
+      "rules_captured": true,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
+      "status": "ruled_out_at_top_of_book",
+      "execution": null,
+      "observation_monitoring": {
+        "status": "outside_late_day_window"
+      }
+    },
+    {
+      "location": "Phoenix",
       "series_ticker": "KXHIGHTPHX",
       "event_ticker": "KXHIGHTPHX-26SEP02",
       "settlement_station": "KPHX",
@@ -497,7 +497,7 @@
       }
     },
     {
-      "location": "High Temperature San Diego",
+      "location": "San Diego",
       "series_ticker": "KXHIGHTSAN",
       "event_ticker": "KXHIGHTSAN-26SEP02",
       "settlement_station": "KSAN",
@@ -518,7 +518,7 @@
       }
     },
     {
-      "location": "San Antonio Daily Maximum Temperature",
+      "location": "San Antonio",
       "series_ticker": "KXHIGHTSATX",
       "event_ticker": "KXHIGHTSATX-26SEP02",
       "settlement_station": "KSAT",
@@ -539,7 +539,7 @@
       }
     },
     {
-      "location": "HIGHEST Temperature SATX",
+      "location": "Louisville",
       "series_ticker": "KXHIGHTSDF",
       "event_ticker": "KXHIGHTSDF-26SEP02",
       "settlement_station": "KSDF",
@@ -560,7 +560,7 @@
       }
     },
     {
-      "location": "Seattle Maximum Temperature Daily",
+      "location": "Seattle",
       "series_ticker": "KXHIGHTSEA",
       "event_ticker": "KXHIGHTSEA-26SEP02",
       "settlement_station": "KSEA",
@@ -572,8 +572,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.07,
-      "optimistic_net_after_fees_buffer": -0.1214,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -581,7 +581,7 @@
       }
     },
     {
-      "location": "San Francisco High Temperature Daily",
+      "location": "San Francisco",
       "series_ticker": "KXHIGHTSFO",
       "event_ticker": "KXHIGHTSFO-26SEP02",
       "settlement_station": "KSFO",
@@ -602,7 +602,7 @@
       }
     },
     {
-      "location": "Trenton, NJ Daily Max Temp",
+      "location": "Trenton",
       "series_ticker": "KXHIGHTTTN",
       "event_ticker": "KXHIGHTTTN-26SEP02",
       "settlement_station": "KTTN",
