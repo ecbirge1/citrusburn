@@ -251,6 +251,16 @@ def settlement_station(members):
     return None
 
 
+def settlement_location(members, meta, fallback):
+    """Prefer the binding rule's location over occasionally stale series display metadata."""
+    for market in members:
+        rules = str(market.get("rules_primary") or "")
+        match = re.search(r"recorded at (.+?) \(CLI[A-Z0-9]+\)", rules, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()
+    return location(meta, fallback)
+
+
 def weather_observations(stations):
     if not stations:
         return {}
@@ -494,7 +504,7 @@ def scan():
     for event_ticker, members in sorted(groups.items()):
         series_ticker = members[0].get("series_ticker") or ""
         meta = series.get(series_ticker, {})
-        place = location(meta, series_ticker)
+        place = settlement_location(members, meta, series_ticker)
         legs = [{"ticker": m["ticker"], "bracket": m.get("title") or m.get("subtitle"), "top": top_ask(m)} for m in members]
         complete = all(leg["top"] for leg in legs)
         top_cost = sum(leg["top"]["ask"] for leg in legs) if complete else None
