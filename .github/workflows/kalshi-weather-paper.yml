@@ -3,7 +3,7 @@ name: Kalshi Weather Paper Scan
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "2,17,32,47 * * * *"
   push:
     paths:
       - "automation/kalshi-weather/weather_paper_scanner.py"
@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: kalshi-weather-paper
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scan:
