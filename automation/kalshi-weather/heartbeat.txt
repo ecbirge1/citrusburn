@@ -1,2 +1,2 @@
 Heartbeat trigger for stale-scan recovery.
-Last forced recovery: 2026-09-02T07:05:16.206Z
+Last forced recovery: 2026-09-02T09:49:05.014Z
