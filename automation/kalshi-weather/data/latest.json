@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-02T01:02:25.544430+00:00",
-  "completed_at": "2026-09-02T01:02:39.633164+00:00",
+  "scanned_at": "2026-09-02T02:55:29.499132+00:00",
+  "completed_at": "2026-09-02T02:55:44.180655+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -136,8 +136,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -170,8 +170,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -238,8 +238,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -272,8 +272,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -306,8 +306,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.0,
-      "optimistic_net_after_fees_buffer": -0.05,
+      "top_basket_cost": 1.02,
+      "optimistic_net_after_fees_buffer": -0.0704,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -340,8 +340,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -374,8 +374,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -408,8 +408,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 0.97,
-      "optimistic_net_after_fees_buffer": -0.0194,
+      "top_basket_cost": 1.03,
+      "optimistic_net_after_fees_buffer": -0.0806,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -442,8 +442,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -476,8 +476,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.12,
-      "optimistic_net_after_fees_buffer": -0.1724,
+      "top_basket_cost": 1.01,
+      "optimistic_net_after_fees_buffer": -0.0602,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -578,8 +578,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.0,
+      "optimistic_net_after_fees_buffer": -0.05,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -612,8 +612,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.16,
-      "optimistic_net_after_fees_buffer": -0.2132,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -646,8 +646,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.12,
-      "optimistic_net_after_fees_buffer": -0.1724,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -680,8 +680,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.16,
+      "optimistic_net_after_fees_buffer": -0.2132,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -714,8 +714,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -748,8 +748,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.81,
-      "optimistic_net_after_fees_buffer": -3.9362,
+      "top_basket_cost": 4.8,
+      "optimistic_net_after_fees_buffer": -3.926,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -782,8 +782,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.15,
-      "optimistic_net_after_fees_buffer": -0.203,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -850,8 +850,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -884,8 +884,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     },
@@ -918,8 +918,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.09,
-      "optimistic_net_after_fees_buffer": -3.2018,
+      "top_basket_cost": 5.13,
+      "optimistic_net_after_fees_buffer": -4.2626,
       "status": "ruled_out_at_top_of_book",
       "execution": null
     }
