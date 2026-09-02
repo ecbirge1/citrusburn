@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-02T19:42:44.316795+00:00",
-  "completed_at": "2026-09-02T19:43:06.084958+00:00",
+  "scanned_at": "2026-09-02T21:01:45.746665+00:00",
+  "completed_at": "2026-09-02T21:02:04.010860+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -107,11 +107,45 @@
     "weather_source_tolerance_f": 1,
     "note": "Basket arbitrage and the experimental late-day observation model are tracked separately. The observation model is a forward test, not a proven edge."
   },
-  "qualifying_signals": [],
+  "qualifying_signals": [
+    {
+      "signal_key": "late_day_observation_model|KXHIGHTSFO-26SEP02-B73.5|no",
+      "strategy": "late_day_observation_model",
+      "model_status": "experimental_forward_test",
+      "observed_at": "2026-09-02T21:02:03.655457+00:00",
+      "location": "San Francisco",
+      "station": "KSFO",
+      "event_ticker": "KXHIGHTSFO-26SEP02",
+      "ticker": "KXHIGHTSFO-26SEP02-B73.5",
+      "bracket": "Will the maximum temperature be 73-74\u00b0 on Sep 2, 2026?",
+      "side": "no",
+      "quantity": 1.0,
+      "model_probability": 0.764,
+      "model_mean_f": 71.06,
+      "model_sigma_f": 1.9,
+      "observed_high_f": 71.06,
+      "six_hour_max_f": 69.08,
+      "remaining_nws_max_f": 71.0,
+      "remaining_nws_source": "nws_hourly",
+      "hours_to_close": 10.97,
+      "gross_cost": 0.55,
+      "estimated_fees": 0.011,
+      "slippage_reserve": 0.005,
+      "model_uncertainty_reserve": 0.05,
+      "expected_net_profit": 0.148,
+      "fills": [
+        {
+          "no_ask": 0.55,
+          "quantity": 1.0
+        }
+      ],
+      "close_time": "2026-09-03T08:00:00+00:00"
+    }
+  ],
   "coverage_failures": [],
   "observation_edge": {
     "status": "experimental_forward_test",
-    "eligible_events": 19,
+    "eligible_events": 24,
     "stations_requested": [
       "KATL",
       "KAUS",
@@ -121,6 +155,8 @@
       "KDFW",
       "KEWR",
       "KHOU",
+      "KLAS",
+      "KLAX",
       "KMDW",
       "KMIA",
       "KMSP",
@@ -129,12 +165,15 @@
       "KOKC",
       "KPHL",
       "KPHX",
+      "KSAN",
       "KSAT",
       "KSDF",
+      "KSEA",
+      "KSFO",
       "KTTN"
     ],
-    "events_evaluated": 19,
-    "new_signals": 0,
+    "events_evaluated": 24,
+    "new_signals": 1,
     "data_failures": []
   },
   "events": [
@@ -151,8 +190,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.23,
+      "optimistic_net_after_fees_buffer": -0.2846,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -176,8 +215,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -197,14 +236,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KMDW",
-        "observed_high_f": 95.0,
+        "observed_high_f": 96.08,
         "six_hour_max_f": 91.94,
         "new_signals": 0
       }
@@ -222,8 +261,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.0,
-      "optimistic_net_after_fees_buffer": -0.05,
+      "top_basket_cost": 1.02,
+      "optimistic_net_after_fees_buffer": -0.0704,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -243,14 +282,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KDEN",
-        "observed_high_f": 84.92,
+        "observed_high_f": 87.08,
         "six_hour_max_f": 84.02,
         "new_signals": 0
       }
@@ -268,8 +307,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -289,12 +328,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "outside_late_day_window"
+        "status": "evaluated",
+        "station": "KLAX",
+        "observed_high_f": 75.92,
+        "six_hour_max_f": 73.94,
+        "new_signals": 0
       }
     },
     {
@@ -310,8 +353,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -356,8 +399,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -377,15 +420,15 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KNYC",
-        "observed_high_f": 71.96,
-        "six_hour_max_f": 71.96,
+        "observed_high_f": 71.06,
+        "six_hour_max_f": 71.06,
         "new_signals": 0
       }
     },
@@ -402,8 +445,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -430,8 +473,8 @@
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KPHL",
-        "observed_high_f": 87.98,
-        "six_hour_max_f": 87.98,
+        "observed_high_f": 77.0,
+        "six_hour_max_f": 77.0,
         "new_signals": 0
       }
     },
@@ -448,8 +491,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -469,8 +512,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -494,8 +537,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -515,8 +558,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -568,7 +611,7 @@
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KDFW",
-        "observed_high_f": 96.98,
+        "observed_high_f": 98.96,
         "six_hour_max_f": 95.0,
         "new_signals": 0
       }
@@ -586,8 +629,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.14,
+      "optimistic_net_after_fees_buffer": -0.1928,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -632,8 +675,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.03,
+      "optimistic_net_after_fees_buffer": -0.0806,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -653,15 +696,15 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.49,
-      "optimistic_net_after_fees_buffer": -3.6098,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KEWR",
-        "observed_high_f": 75.02,
-        "six_hour_max_f": 75.02,
+        "observed_high_f": 73.04,
+        "six_hour_max_f": 73.04,
         "new_signals": 0
       }
     },
@@ -678,8 +721,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.16,
-      "optimistic_net_after_fees_buffer": -3.2732,
+      "top_basket_cost": 3.72,
+      "optimistic_net_after_fees_buffer": -2.8244,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -699,14 +742,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.14,
-      "optimistic_net_after_fees_buffer": -0.1928,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KHOU",
-        "observed_high_f": 93.02,
+        "observed_high_f": 93.92,
         "six_hour_max_f": 93.02,
         "new_signals": 0
       }
@@ -716,27 +759,6 @@
       "series_ticker": "KXHIGHTHOU",
       "event_ticker": "KXHIGHTHOU-26SEP03",
       "settlement_station": "KHOU",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.0,
-      "optimistic_net_after_fees_buffer": -0.05,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Las Vegas",
-      "series_ticker": "KXHIGHTLV",
-      "event_ticker": "KXHIGHTLV-26SEP02",
-      "settlement_station": "KLAS",
       "bracket_count": 6,
       "settlement_sources": [
         {
@@ -756,6 +778,31 @@
     {
       "location": "Las Vegas",
       "series_ticker": "KXHIGHTLV",
+      "event_ticker": "KXHIGHTLV-26SEP02",
+      "settlement_station": "KLAS",
+      "bracket_count": 6,
+      "settlement_sources": [
+        {
+          "name": "The Weather Company",
+          "url": "https://weather.com/kalshi"
+        }
+      ],
+      "rules_captured": true,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
+      "status": "ruled_out_at_top_of_book",
+      "execution": null,
+      "observation_monitoring": {
+        "status": "evaluated",
+        "station": "KLAS",
+        "observed_high_f": 93.92,
+        "six_hour_max_f": 87.98,
+        "new_signals": 0
+      }
+    },
+    {
+      "location": "Las Vegas",
+      "series_ticker": "KXHIGHTLV",
       "event_ticker": "KXHIGHTLV-26SEP03",
       "settlement_station": "KLAS",
       "bracket_count": 6,
@@ -766,8 +813,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -787,14 +834,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KMSP",
-        "observed_high_f": 82.94,
+        "observed_high_f": 87.08,
         "six_hour_max_f": 80.96,
         "new_signals": 0
       }
@@ -812,8 +859,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 0.99,
+      "optimistic_net_after_fees_buffer": -0.0398,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -833,8 +880,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -858,8 +905,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.16,
+      "optimistic_net_after_fees_buffer": -0.2132,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -879,14 +926,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.12,
-      "optimistic_net_after_fees_buffer": -0.1724,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KOKC",
-        "observed_high_f": 98.06,
+        "observed_high_f": 98.96,
         "six_hour_max_f": 96.98,
         "new_signals": 0
       }
@@ -904,8 +951,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.13,
+      "optimistic_net_after_fees_buffer": -0.1826,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -925,14 +972,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KPHX",
-        "observed_high_f": 98.96,
+        "observed_high_f": 102.02,
         "six_hour_max_f": 98.96,
         "new_signals": 0
       }
@@ -950,8 +997,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -971,12 +1018,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.41,
-      "optimistic_net_after_fees_buffer": -3.5282,
+      "top_basket_cost": 3.55,
+      "optimistic_net_after_fees_buffer": -2.651,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "outside_late_day_window"
+        "status": "evaluated",
+        "station": "KSAN",
+        "observed_high_f": 75.92,
+        "six_hour_max_f": 75.02,
+        "new_signals": 0
       }
     },
     {
@@ -992,8 +1043,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.96,
-      "optimistic_net_after_fees_buffer": -4.0892,
+      "top_basket_cost": 4.69,
+      "optimistic_net_after_fees_buffer": -3.8138,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1013,14 +1064,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.13,
+      "optimistic_net_after_fees_buffer": -0.1826,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KSAT",
-        "observed_high_f": 93.92,
+        "observed_high_f": 98.96,
         "six_hour_max_f": 93.02,
         "new_signals": 0
       }
@@ -1038,8 +1089,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1084,8 +1135,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.94,
-      "optimistic_net_after_fees_buffer": -5.0888,
+      "top_basket_cost": 5.88,
+      "optimistic_net_after_fees_buffer": -5.0276,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1105,12 +1156,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "outside_late_day_window"
+        "status": "evaluated",
+        "station": "KSEA",
+        "observed_high_f": 69.08,
+        "six_hour_max_f": 64.94,
+        "new_signals": 0
       }
     },
     {
@@ -1126,8 +1181,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1147,12 +1202,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "outside_late_day_window"
+        "status": "evaluated",
+        "station": "KSFO",
+        "observed_high_f": 71.06,
+        "six_hour_max_f": 69.08,
+        "new_signals": 1
       }
     },
     {
@@ -1168,8 +1227,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.02,
-      "optimistic_net_after_fees_buffer": -0.0704,
+      "top_basket_cost": 1.0,
+      "optimistic_net_after_fees_buffer": -0.05,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1189,15 +1248,15 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 3.03,
-      "optimistic_net_after_fees_buffer": -2.1206,
+      "top_basket_cost": 1.67,
+      "optimistic_net_after_fees_buffer": -0.7334,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KTTN",
-        "observed_high_f": 82.04,
-        "six_hour_max_f": 82.04,
+        "observed_high_f": 71.96,
+        "six_hour_max_f": 71.96,
         "new_signals": 0
       }
     },
@@ -1214,8 +1273,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.12,
-      "optimistic_net_after_fees_buffer": -3.2324,
+      "top_basket_cost": 3.66,
+      "optimistic_net_after_fees_buffer": -2.7632,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1225,12 +1284,12 @@
   ],
   "settled_reconciliations": [],
   "paper_tracking": {
-    "cumulative_signals": 9,
+    "cumulative_signals": 10,
     "cumulative_settled": 0,
     "cumulative_paper_pnl": 0,
     "signals_by_strategy": {
       "complete_bracket_basket": 0,
-      "late_day_observation_model": 9
+      "late_day_observation_model": 10
     }
   }
 }
