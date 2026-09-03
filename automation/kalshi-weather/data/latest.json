@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-03T20:05:46.048983+00:00",
-  "completed_at": "2026-09-03T20:06:14.798937+00:00",
+  "scanned_at": "2026-09-03T21:47:45.586366+00:00",
+  "completed_at": "2026-09-03T21:48:07.520865+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -107,74 +107,7 @@
     "weather_source_tolerance_f": 1,
     "note": "Basket arbitrage and the experimental late-day observation model are tracked separately. The observation model is a forward test, not a proven edge."
   },
-  "qualifying_signals": [
-    {
-      "signal_key": "late_day_observation_model|KXHIGHTPHX-26SEP03-B103.5|no",
-      "strategy": "late_day_observation_model",
-      "model_status": "experimental_forward_test",
-      "observed_at": "2026-09-03T20:06:10.721897+00:00",
-      "location": "Phoenix",
-      "station": "KPHX",
-      "event_ticker": "KXHIGHTPHX-26SEP03",
-      "ticker": "KXHIGHTPHX-26SEP03-B103.5",
-      "bracket": "Will the maximum temperature be 103-104\u00b0 on Sep 3, 2026?",
-      "side": "no",
-      "quantity": 1.0,
-      "model_probability": 0.8007,
-      "model_mean_f": 101.0,
-      "model_sigma_f": 1.9,
-      "observed_high_f": 100.04,
-      "six_hour_max_f": 96.08,
-      "remaining_nws_max_f": 101.0,
-      "remaining_nws_source": "nws_hourly",
-      "hours_to_close": 10.9,
-      "gross_cost": 0.3,
-      "estimated_fees": 0.006,
-      "slippage_reserve": 0.005,
-      "model_uncertainty_reserve": 0.05,
-      "expected_net_profit": 0.4397,
-      "fills": [
-        {
-          "no_ask": 0.3,
-          "quantity": 1.0
-        }
-      ],
-      "close_time": "2026-09-04T07:00:00+00:00"
-    },
-    {
-      "signal_key": "late_day_observation_model|KXHIGHTSEA-26SEP03-B67.5|no",
-      "strategy": "late_day_observation_model",
-      "model_status": "experimental_forward_test",
-      "observed_at": "2026-09-03T20:06:14.025693+00:00",
-      "location": "Seattle",
-      "station": "KSEA",
-      "event_ticker": "KXHIGHTSEA-26SEP03",
-      "ticker": "KXHIGHTSEA-26SEP03-B67.5",
-      "bracket": "Will the maximum temperature be 67-68\u00b0 on Sep 3, 2026?",
-      "side": "no",
-      "quantity": 1.0,
-      "model_probability": 0.8175,
-      "model_mean_f": 65.0,
-      "model_sigma_f": 1.9,
-      "observed_high_f": 62.06,
-      "six_hour_max_f": 60.98,
-      "remaining_nws_max_f": 65.0,
-      "remaining_nws_source": "nws_hourly",
-      "hours_to_close": 11.9,
-      "gross_cost": 0.64,
-      "estimated_fees": 0.0128,
-      "slippage_reserve": 0.005,
-      "model_uncertainty_reserve": 0.05,
-      "expected_net_profit": 0.1097,
-      "fills": [
-        {
-          "no_ask": 0.64,
-          "quantity": 1.0
-        }
-      ],
-      "close_time": "2026-09-04T08:00:00+00:00"
-    }
-  ],
+  "qualifying_signals": [],
   "coverage_failures": [],
   "observation_edge": {
     "status": "experimental_forward_test",
@@ -206,7 +139,7 @@
       "KTTN"
     ],
     "events_evaluated": 24,
-    "new_signals": 2,
+    "new_signals": 0,
     "data_failures": []
   },
   "events": [
@@ -223,8 +156,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -269,14 +202,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KMDW",
-        "observed_high_f": 91.04,
+        "observed_high_f": 91.94,
         "six_hour_max_f": 91.04,
         "new_signals": 0
       }
@@ -294,8 +227,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.0,
+      "optimistic_net_after_fees_buffer": -0.05,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -315,14 +248,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KDEN",
-        "observed_high_f": 86.0,
+        "observed_high_f": 91.04,
         "six_hour_max_f": 84.02,
         "new_signals": 0
       }
@@ -340,8 +273,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 0.99,
-      "optimistic_net_after_fees_buffer": -0.0398,
+      "top_basket_cost": 1.01,
+      "optimistic_net_after_fees_buffer": -0.0602,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -361,8 +294,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -386,8 +319,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -432,8 +365,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -453,8 +386,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -478,8 +411,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -499,8 +432,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -524,8 +457,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -545,8 +478,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -570,8 +503,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -591,8 +524,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -616,8 +549,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -637,14 +570,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.07,
-      "optimistic_net_after_fees_buffer": -0.1214,
+      "top_basket_cost": 1.23,
+      "optimistic_net_after_fees_buffer": -0.2846,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KDFW",
-        "observed_high_f": 91.94,
+        "observed_high_f": 93.02,
         "six_hour_max_f": 87.98,
         "new_signals": 0
       }
@@ -662,8 +595,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -683,8 +616,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -708,8 +641,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -729,14 +662,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 2.97,
-      "optimistic_net_after_fees_buffer": -2.0594,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KEWR",
-        "observed_high_f": 87.08,
+        "observed_high_f": 87.98,
         "six_hour_max_f": 86.0,
         "new_signals": 0
       }
@@ -754,8 +687,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.58,
-      "optimistic_net_after_fees_buffer": -4.7216,
+      "top_basket_cost": 5.61,
+      "optimistic_net_after_fees_buffer": -4.7522,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -775,8 +708,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -800,8 +733,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -821,14 +754,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.15,
+      "optimistic_net_after_fees_buffer": -0.203,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KLAS",
-        "observed_high_f": 91.94,
+        "observed_high_f": 93.92,
         "six_hour_max_f": 87.08,
         "new_signals": 0
       }
@@ -867,8 +800,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -892,8 +825,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.03,
+      "optimistic_net_after_fees_buffer": -0.0806,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -913,8 +846,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.17,
-      "optimistic_net_after_fees_buffer": -0.2234,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -959,14 +892,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 1.16,
+      "optimistic_net_after_fees_buffer": -0.2132,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KOKC",
-        "observed_high_f": 93.02,
+        "observed_high_f": 93.92,
         "six_hour_max_f": 91.04,
         "new_signals": 0
       }
@@ -984,8 +917,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.2,
+      "optimistic_net_after_fees_buffer": -0.254,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1005,16 +938,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KPHX",
-        "observed_high_f": 100.04,
+        "observed_high_f": 100.94,
         "six_hour_max_f": 96.08,
-        "new_signals": 1
+        "new_signals": 0
       }
     },
     {
@@ -1030,8 +963,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 1.01,
+      "optimistic_net_after_fees_buffer": -0.0602,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1051,14 +984,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.93,
-      "optimistic_net_after_fees_buffer": -4.0586,
+      "top_basket_cost": 3.95,
+      "optimistic_net_after_fees_buffer": -3.059,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KSAN",
-        "observed_high_f": 75.02,
+        "observed_high_f": 75.92,
         "six_hour_max_f": 75.02,
         "new_signals": 0
       }
@@ -1076,8 +1009,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.82,
-      "optimistic_net_after_fees_buffer": -4.9664,
+      "top_basket_cost": 5.91,
+      "optimistic_net_after_fees_buffer": -5.0582,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1097,14 +1030,14 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.12,
+      "optimistic_net_after_fees_buffer": -0.1724,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KSAT",
-        "observed_high_f": 96.98,
+        "observed_high_f": 98.06,
         "six_hour_max_f": 93.02,
         "new_signals": 0
       }
@@ -1122,8 +1055,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1143,8 +1076,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.59,
-      "optimistic_net_after_fees_buffer": -3.7118,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1168,8 +1101,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.88,
-      "optimistic_net_after_fees_buffer": -5.0276,
+      "top_basket_cost": 5.94,
+      "optimistic_net_after_fees_buffer": -5.0888,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1189,16 +1122,16 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.15,
-      "optimistic_net_after_fees_buffer": -0.203,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "evaluated",
         "station": "KSEA",
-        "observed_high_f": 62.06,
+        "observed_high_f": 62.96,
         "six_hour_max_f": 60.98,
-        "new_signals": 1
+        "new_signals": 0
       }
     },
     {
@@ -1214,8 +1147,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1235,8 +1168,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1260,8 +1193,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.02,
-      "optimistic_net_after_fees_buffer": -0.0704,
+      "top_basket_cost": 1.01,
+      "optimistic_net_after_fees_buffer": -0.0602,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1281,8 +1214,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 3.58,
-      "optimistic_net_after_fees_buffer": -2.6816,
+      "top_basket_cost": 3.56,
+      "optimistic_net_after_fees_buffer": -2.6612,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1306,8 +1239,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.6,
-      "optimistic_net_after_fees_buffer": -4.742,
+      "top_basket_cost": 5.58,
+      "optimistic_net_after_fees_buffer": -4.7216,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
