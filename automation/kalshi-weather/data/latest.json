@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-03T04:39:32.180148+00:00",
-  "completed_at": "2026-09-03T04:39:52.205347+00:00",
+  "scanned_at": "2026-09-03T06:51:05.521101+00:00",
+  "completed_at": "2026-09-03T06:51:23.002274+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -67,8 +67,8 @@
       "KXHOUHIGH": 1,
       "KXPHILHIGH": 1
     },
-    "open_temperature_markets": 288,
-    "events": 48,
+    "open_temperature_markets": 186,
+    "events": 31,
     "locations_count": 24,
     "locations": [
       "Atlanta",
@@ -111,63 +111,21 @@
   "coverage_failures": [],
   "observation_edge": {
     "status": "experimental_forward_test",
-    "eligible_events": 24,
+    "eligible_events": 7,
     "stations_requested": [
-      "KATL",
-      "KAUS",
-      "KBOS",
-      "KDCA",
       "KDEN",
-      "KDFW",
-      "KEWR",
-      "KHOU",
       "KLAS",
       "KLAX",
-      "KMDW",
-      "KMIA",
-      "KMSP",
-      "KMSY",
-      "KNYC",
-      "KOKC",
-      "KPHL",
       "KPHX",
       "KSAN",
-      "KSAT",
-      "KSDF",
       "KSEA",
-      "KSFO",
-      "KTTN"
+      "KSFO"
     ],
-    "events_evaluated": 24,
+    "events_evaluated": 7,
     "new_signals": 0,
     "data_failures": []
   },
   "events": [
-    {
-      "location": "Austin",
-      "series_ticker": "KXHIGHAUS",
-      "event_ticker": "KXHIGHAUS-26SEP02",
-      "settlement_station": "KAUS",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KAUS",
-        "observed_high_f": 100.94,
-        "six_hour_max_f": 100.94,
-        "new_signals": 0
-      }
-    },
     {
       "location": "Austin",
       "series_ticker": "KXHIGHAUS",
@@ -181,37 +139,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Chicago",
-      "series_ticker": "KXHIGHCHI",
-      "event_ticker": "KXHIGHCHI-26SEP02",
-      "settlement_station": "KMDW",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KMDW",
-        "observed_high_f": 96.08,
-        "six_hour_max_f": 96.08,
-        "new_signals": 0
       }
     },
     {
@@ -227,8 +160,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -273,8 +206,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -319,37 +252,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Miami",
-      "series_ticker": "KXHIGHMIA",
-      "event_ticker": "KXHIGHMIA-26SEP02",
-      "settlement_station": "KMIA",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KMIA",
-        "observed_high_f": 89.96,
-        "six_hour_max_f": 89.96,
-        "new_signals": 0
       }
     },
     {
@@ -365,37 +273,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "New York City",
-      "series_ticker": "KXHIGHNY",
-      "event_ticker": "KXHIGHNY-26SEP02",
-      "settlement_station": "KNYC",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KNYC",
-        "observed_high_f": 71.06,
-        "six_hour_max_f": 71.06,
-        "new_signals": 0
       }
     },
     {
@@ -411,37 +294,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 0.98,
+      "optimistic_net_after_fees_buffer": -0.0296,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Philadelphia",
-      "series_ticker": "KXHIGHPHIL",
-      "event_ticker": "KXHIGHPHIL-26SEP02",
-      "settlement_station": "KPHL",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KPHL",
-        "observed_high_f": 77.0,
-        "six_hour_max_f": 77.0,
-        "new_signals": 0
       }
     },
     {
@@ -457,37 +315,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Atlanta",
-      "series_ticker": "KXHIGHTATL",
-      "event_ticker": "KXHIGHTATL-26SEP02",
-      "settlement_station": "KATL",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
       "top_basket_cost": 1.05,
       "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KATL",
-        "observed_high_f": 95.0,
-        "six_hour_max_f": 95.0,
-        "new_signals": 0
+        "status": "outside_late_day_window"
       }
     },
     {
@@ -503,37 +336,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Boston",
-      "series_ticker": "KXHIGHTBOS",
-      "event_ticker": "KXHIGHTBOS-26SEP02",
-      "settlement_station": "KBOS",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
       "top_basket_cost": 1.05,
       "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KBOS",
-        "observed_high_f": 71.96,
-        "six_hour_max_f": 71.96,
-        "new_signals": 0
+        "status": "outside_late_day_window"
       }
     },
     {
@@ -549,37 +357,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.0,
-      "optimistic_net_after_fees_buffer": -0.05,
+      "top_basket_cost": 0.97,
+      "optimistic_net_after_fees_buffer": -0.0194,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Dallas",
-      "series_ticker": "KXHIGHTDAL",
-      "event_ticker": "KXHIGHTDAL-26SEP02",
-      "settlement_station": "KDFW",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KDFW",
-        "observed_high_f": 100.04,
-        "six_hour_max_f": 100.04,
-        "new_signals": 0
       }
     },
     {
@@ -595,37 +378,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.17,
-      "optimistic_net_after_fees_buffer": -0.2234,
+      "top_basket_cost": 1.12,
+      "optimistic_net_after_fees_buffer": -0.1724,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Washington DC",
-      "series_ticker": "KXHIGHTDC",
-      "event_ticker": "KXHIGHTDC-26SEP02",
-      "settlement_station": "KDCA",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KDCA",
-        "observed_high_f": 91.04,
-        "six_hour_max_f": 91.04,
-        "new_signals": 0
       }
     },
     {
@@ -652,31 +410,6 @@
     {
       "location": "Newark",
       "series_ticker": "KXHIGHTEWR",
-      "event_ticker": "KXHIGHTEWR-26SEP02",
-      "settlement_station": "KEWR",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KEWR",
-        "observed_high_f": 73.04,
-        "six_hour_max_f": 73.04,
-        "new_signals": 0
-      }
-    },
-    {
-      "location": "Newark",
-      "series_ticker": "KXHIGHTEWR",
       "event_ticker": "KXHIGHTEWR-26SEP03",
       "settlement_station": "KEWR",
       "bracket_count": 6,
@@ -687,37 +420,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 2.18,
-      "optimistic_net_after_fees_buffer": -1.2536,
+      "top_basket_cost": 1.64,
+      "optimistic_net_after_fees_buffer": -0.7028,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Houston",
-      "series_ticker": "KXHIGHTHOU",
-      "event_ticker": "KXHIGHTHOU-26SEP02",
-      "settlement_station": "KHOU",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KHOU",
-        "observed_high_f": 96.08,
-        "six_hour_max_f": 96.08,
-        "new_signals": 0
       }
     },
     {
@@ -733,8 +441,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -779,37 +487,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Minneapolis",
-      "series_ticker": "KXHIGHTMIN",
-      "event_ticker": "KXHIGHTMIN-26SEP02",
-      "settlement_station": "KMSP",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KMSP",
-        "observed_high_f": 89.06,
-        "six_hour_max_f": 89.06,
-        "new_signals": 0
       }
     },
     {
@@ -825,37 +508,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 0.98,
+      "optimistic_net_after_fees_buffer": -0.0296,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "New Orleans",
-      "series_ticker": "KXHIGHTNOLA",
-      "event_ticker": "KXHIGHTNOLA-26SEP02",
-      "settlement_station": "KMSY",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KMSY",
-        "observed_high_f": 91.04,
-        "six_hour_max_f": 91.04,
-        "new_signals": 0
       }
     },
     {
@@ -882,31 +540,6 @@
     {
       "location": "Oklahoma City",
       "series_ticker": "KXHIGHTOKC",
-      "event_ticker": "KXHIGHTOKC-26SEP02",
-      "settlement_station": "KOKC",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KOKC",
-        "observed_high_f": 100.04,
-        "six_hour_max_f": 100.04,
-        "new_signals": 0
-      }
-    },
-    {
-      "location": "Oklahoma City",
-      "series_ticker": "KXHIGHTOKC",
       "event_ticker": "KXHIGHTOKC-26SEP03",
       "settlement_station": "KOKC",
       "bracket_count": 6,
@@ -917,8 +550,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1009,37 +642,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 3.88,
-      "optimistic_net_after_fees_buffer": -2.9876,
+      "top_basket_cost": 3.76,
+      "optimistic_net_after_fees_buffer": -2.8652,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "San Antonio",
-      "series_ticker": "KXHIGHTSATX",
-      "event_ticker": "KXHIGHTSATX-26SEP02",
-      "settlement_station": "KSAT",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KSAT",
-        "observed_high_f": 100.04,
-        "six_hour_max_f": 100.04,
-        "new_signals": 0
       }
     },
     {
@@ -1066,31 +674,6 @@
     {
       "location": "Louisville",
       "series_ticker": "KXHIGHTSDF",
-      "event_ticker": "KXHIGHTSDF-26SEP02",
-      "settlement_station": "KSDF",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KSDF",
-        "observed_high_f": 98.06,
-        "six_hour_max_f": 98.06,
-        "new_signals": 0
-      }
-    },
-    {
-      "location": "Louisville",
-      "series_ticker": "KXHIGHTSDF",
       "event_ticker": "KXHIGHTSDF-26SEP03",
       "settlement_station": "KSDF",
       "bracket_count": 6,
@@ -1101,8 +684,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.94,
-      "optimistic_net_after_fees_buffer": -5.0888,
+      "top_basket_cost": 5.88,
+      "optimistic_net_after_fees_buffer": -5.0276,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1147,8 +730,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.04,
-      "optimistic_net_after_fees_buffer": -0.0908,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -1193,37 +776,12 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.14,
-      "optimistic_net_after_fees_buffer": -0.1928,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
         "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Trenton",
-      "series_ticker": "KXHIGHTTTN",
-      "event_ticker": "KXHIGHTTTN-26SEP02",
-      "settlement_station": "KTTN",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.15,
-      "optimistic_net_after_fees_buffer": -0.203,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "evaluated",
-        "station": "KTTN",
-        "observed_high_f": 71.96,
-        "six_hour_max_f": 71.96,
-        "new_signals": 0
       }
     },
     {
@@ -1239,8 +797,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 2.69,
-      "optimistic_net_after_fees_buffer": -1.7738,
+      "top_basket_cost": 3.3,
+      "optimistic_net_after_fees_buffer": -2.396,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
