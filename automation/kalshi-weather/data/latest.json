@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-03T08:56:38.634687+00:00",
-  "completed_at": "2026-09-03T08:56:53.192586+00:00",
+  "scanned_at": "2026-09-03T09:14:03.013947+00:00",
+  "completed_at": "2026-09-03T09:14:14.689605+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -67,8 +67,8 @@
       "KXHOUHIGH": 1,
       "KXPHILHIGH": 1
     },
-    "open_temperature_markets": 186,
-    "events": 31,
+    "open_temperature_markets": 144,
+    "events": 24,
     "locations_count": 24,
     "locations": [
       "Atlanta",
@@ -131,8 +131,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.12,
-      "optimistic_net_after_fees_buffer": -0.1724,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -152,29 +152,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Denver",
-      "series_ticker": "KXHIGHDEN",
-      "event_ticker": "KXHIGHDEN-26SEP02",
-      "settlement_station": "KDEN",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -194,29 +173,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Los Angeles",
-      "series_ticker": "KXHIGHLAX",
-      "event_ticker": "KXHIGHLAX-26SEP02",
-      "settlement_station": "KLAX",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -236,8 +194,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -257,8 +215,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.17,
-      "optimistic_net_after_fees_buffer": -0.2234,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -278,8 +236,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.02,
-      "optimistic_net_after_fees_buffer": -0.0704,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -299,8 +257,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.26,
-      "optimistic_net_after_fees_buffer": -0.3152,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -320,8 +278,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.23,
-      "optimistic_net_after_fees_buffer": -0.2846,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -341,8 +299,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -362,8 +320,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.27,
-      "optimistic_net_after_fees_buffer": -0.3254,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -383,8 +341,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.28,
-      "optimistic_net_after_fees_buffer": -0.3356,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -404,8 +362,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.23,
-      "optimistic_net_after_fees_buffer": -4.3646,
+      "top_basket_cost": 5.19,
+      "optimistic_net_after_fees_buffer": -4.3238,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -425,29 +383,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.4,
-      "optimistic_net_after_fees_buffer": -0.458,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Las Vegas",
-      "series_ticker": "KXHIGHTLV",
-      "event_ticker": "KXHIGHTLV-26SEP02",
-      "settlement_station": "KLAS",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -467,8 +404,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.19,
-      "optimistic_net_after_fees_buffer": -0.2438,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -488,8 +425,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.3,
-      "optimistic_net_after_fees_buffer": -0.356,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -509,8 +446,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.29,
-      "optimistic_net_after_fees_buffer": -0.3458,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -530,29 +467,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.22,
-      "optimistic_net_after_fees_buffer": -0.2744,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Phoenix",
-      "series_ticker": "KXHIGHTPHX",
-      "event_ticker": "KXHIGHTPHX-26SEP02",
-      "settlement_station": "KPHX",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -572,29 +488,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "San Diego",
-      "series_ticker": "KXHIGHTSAN",
-      "event_ticker": "KXHIGHTSAN-26SEP02",
-      "settlement_station": "KSAN",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.12,
-      "optimistic_net_after_fees_buffer": -0.1724,
+      "top_basket_cost": 1.08,
+      "optimistic_net_after_fees_buffer": -0.1316,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -614,8 +509,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.94,
-      "optimistic_net_after_fees_buffer": -5.0888,
+      "top_basket_cost": 5.91,
+      "optimistic_net_after_fees_buffer": -5.0582,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -635,8 +530,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.22,
-      "optimistic_net_after_fees_buffer": -0.2744,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -667,27 +562,6 @@
     {
       "location": "Seattle",
       "series_ticker": "KXHIGHTSEA",
-      "event_ticker": "KXHIGHTSEA-26SEP02",
-      "settlement_station": "KSEA",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "Seattle",
-      "series_ticker": "KXHIGHTSEA",
       "event_ticker": "KXHIGHTSEA-26SEP03",
       "settlement_station": "KSEA",
       "bracket_count": 6,
@@ -698,29 +572,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.22,
-      "optimistic_net_after_fees_buffer": -0.2744,
-      "status": "ruled_out_at_top_of_book",
-      "execution": null,
-      "observation_monitoring": {
-        "status": "outside_late_day_window"
-      }
-    },
-    {
-      "location": "San Francisco",
-      "series_ticker": "KXHIGHTSFO",
-      "event_ticker": "KXHIGHTSFO-26SEP02",
-      "settlement_station": "KSFO",
-      "bracket_count": 6,
-      "settlement_sources": [
-        {
-          "name": "The Weather Company",
-          "url": "https://weather.com/kalshi"
-        }
-      ],
-      "rules_captured": true,
-      "top_basket_cost": 1.05,
-      "optimistic_net_after_fees_buffer": -0.101,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -740,8 +593,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.24,
-      "optimistic_net_after_fees_buffer": -0.2948,
+      "top_basket_cost": 1.14,
+      "optimistic_net_after_fees_buffer": -0.1928,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -761,8 +614,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 5.61,
-      "optimistic_net_after_fees_buffer": -4.7522,
+      "top_basket_cost": 5.35,
+      "optimistic_net_after_fees_buffer": -4.487,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
