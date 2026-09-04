@@ -2,13 +2,6 @@ name: Kalshi Weather Paper Scan
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "2,17,32,47 * * * *"
-  push:
-    paths:
-      - "automation/kalshi-weather/weather_paper_scanner.py"
-      - ".github/workflows/kalshi-weather-paper.yml"
-      - "automation/kalshi-weather/heartbeat.txt"
 
 permissions:
   contents: write
