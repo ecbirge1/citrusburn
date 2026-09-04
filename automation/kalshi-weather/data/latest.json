@@ -1,8 +1,8 @@
 {
   "mode": "paper_only",
   "live_trading": false,
-  "scanned_at": "2026-09-04T09:33:30.873109+00:00",
-  "completed_at": "2026-09-04T09:33:44.240514+00:00",
+  "scanned_at": "2026-09-04T11:49:58.983195+00:00",
+  "completed_at": "2026-09-04T11:50:11.003966+00:00",
   "discovery": {
     "pagination_complete": true,
     "market_pages": 57,
@@ -131,8 +131,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.13,
-      "optimistic_net_after_fees_buffer": -0.1826,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -152,8 +152,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.04,
+      "optimistic_net_after_fees_buffer": -0.0908,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -173,8 +173,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -194,8 +194,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.08,
-      "optimistic_net_after_fees_buffer": -0.1316,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -236,8 +236,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -257,8 +257,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.01,
-      "optimistic_net_after_fees_buffer": -0.0602,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -278,8 +278,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.07,
-      "optimistic_net_after_fees_buffer": -0.1214,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -299,8 +299,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.06,
-      "optimistic_net_after_fees_buffer": -0.1112,
+      "top_basket_cost": 1.03,
+      "optimistic_net_after_fees_buffer": -0.0806,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -320,8 +320,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.07,
-      "optimistic_net_after_fees_buffer": -0.1214,
+      "top_basket_cost": 1.15,
+      "optimistic_net_after_fees_buffer": -0.203,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -341,8 +341,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 0.99,
-      "optimistic_net_after_fees_buffer": -0.0398,
+      "top_basket_cost": 1.05,
+      "optimistic_net_after_fees_buffer": -0.101,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -362,8 +362,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 3.99,
-      "optimistic_net_after_fees_buffer": -3.0998,
+      "top_basket_cost": 3.55,
+      "optimistic_net_after_fees_buffer": -2.651,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -383,8 +383,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.02,
-      "optimistic_net_after_fees_buffer": -0.0704,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -404,8 +404,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.07,
+      "optimistic_net_after_fees_buffer": -0.1214,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -425,8 +425,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.03,
-      "optimistic_net_after_fees_buffer": -0.0806,
+      "top_basket_cost": 1.12,
+      "optimistic_net_after_fees_buffer": -0.1724,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -446,8 +446,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.11,
-      "optimistic_net_after_fees_buffer": -0.1622,
+      "top_basket_cost": 1.13,
+      "optimistic_net_after_fees_buffer": -0.1826,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -467,8 +467,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.11,
+      "optimistic_net_after_fees_buffer": -0.1622,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -488,8 +488,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.07,
-      "optimistic_net_after_fees_buffer": -0.1214,
+      "top_basket_cost": 1.06,
+      "optimistic_net_after_fees_buffer": -0.1112,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -509,8 +509,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 4.95,
-      "optimistic_net_after_fees_buffer": -4.079,
+      "top_basket_cost": 4.71,
+      "optimistic_net_after_fees_buffer": -3.8342,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -530,8 +530,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.13,
+      "optimistic_net_after_fees_buffer": -0.1826,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -572,8 +572,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.09,
-      "optimistic_net_after_fees_buffer": -0.1418,
+      "top_basket_cost": 1.1,
+      "optimistic_net_after_fees_buffer": -0.152,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -593,8 +593,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 1.1,
-      "optimistic_net_after_fees_buffer": -0.152,
+      "top_basket_cost": 1.09,
+      "optimistic_net_after_fees_buffer": -0.1418,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -614,8 +614,8 @@
         }
       ],
       "rules_captured": true,
-      "top_basket_cost": 3.85,
-      "optimistic_net_after_fees_buffer": -2.957,
+      "top_basket_cost": 3.28,
+      "optimistic_net_after_fees_buffer": -2.3756,
       "status": "ruled_out_at_top_of_book",
       "execution": null,
       "observation_monitoring": {
@@ -623,11 +623,78 @@
       }
     }
   ],
-  "settled_reconciliations": [],
+  "settled_reconciliations": [
+    {
+      "signal_key": "late_day_observation_model|KXHIGHMIA-26SEP03-B93.5|no",
+      "reconciled_at": "2026-09-04T11:50:11.076109+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHMIA-26SEP03",
+      "ticker": "KXHIGHMIA-26SEP03-B93.5",
+      "side": "no",
+      "result": "yes",
+      "won": false,
+      "paper_pnl": -0.056
+    },
+    {
+      "signal_key": "late_day_observation_model|KXHIGHNY-26SEP03-T83|no",
+      "reconciled_at": "2026-09-04T11:50:11.151887+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHNY-26SEP03",
+      "ticker": "KXHIGHNY-26SEP03-T83",
+      "side": "no",
+      "result": "no",
+      "won": true,
+      "paper_pnl": 0.4034
+    },
+    {
+      "signal_key": "late_day_observation_model|KXHIGHPHIL-26SEP03-B88.5|no",
+      "reconciled_at": "2026-09-04T11:50:11.218858+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHPHIL-26SEP03",
+      "ticker": "KXHIGHPHIL-26SEP03-B88.5",
+      "side": "no",
+      "result": "yes",
+      "won": false,
+      "paper_pnl": -0.719
+    },
+    {
+      "signal_key": "late_day_observation_model|KXHIGHTATL-26SEP03-B97.5|no",
+      "reconciled_at": "2026-09-04T11:50:11.286674+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHTATL-26SEP03",
+      "ticker": "KXHIGHTATL-26SEP03-B97.5",
+      "side": "no",
+      "result": "no",
+      "won": true,
+      "paper_pnl": 0.6074
+    },
+    {
+      "signal_key": "late_day_observation_model|KXHIGHTBOS-26SEP03-B73.5|no",
+      "reconciled_at": "2026-09-04T11:50:11.391623+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHTBOS-26SEP03",
+      "ticker": "KXHIGHTBOS-26SEP03-B73.5",
+      "side": "no",
+      "result": "yes",
+      "won": false,
+      "paper_pnl": -0.3824
+    },
+    {
+      "signal_key": "late_day_observation_model|KXHIGHTDC-26SEP03-T93|no",
+      "reconciled_at": "2026-09-04T11:50:11.458877+00:00",
+      "strategy": "late_day_observation_model",
+      "event_ticker": "KXHIGHTDC-26SEP03",
+      "ticker": "KXHIGHTDC-26SEP03-T93",
+      "side": "no",
+      "result": "yes",
+      "won": false,
+      "paper_pnl": -0.2498
+    }
+  ],
   "paper_tracking": {
     "cumulative_signals": 23,
-    "cumulative_settled": 11,
-    "cumulative_paper_pnl": -1.4916,
+    "cumulative_settled": 17,
+    "cumulative_paper_pnl": -1.888,
     "signals_by_strategy": {
       "complete_bracket_basket": 0,
       "late_day_observation_model": 23
